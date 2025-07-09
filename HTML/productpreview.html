@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script> 
+      //the container for all product details {images ,price ,title ,desc .....}
+     
+      var BIGdiv = document.createElement("div");
+      BIGdiv.style.width = "1000px";
+      BIGdiv.style.height = "600px";
+      BIGdiv.style.backgroundColor = "#dae0eb";
+
+      var largeImageDiv = document.createElement("div");
+      var largeImage = document.createElement("img");
+      largeImage.src = "../images/Nike.jpeg";
+      largeImageDiv.appendChild(largeImage);
+
+      //div for small images against the large image
+      var DivForSmallImages = document.createElement("div");
+      var smallImage = document.createElement("img");
+      smallImage.src = "../images/Nike.jpeg";
+      smallImage.style.width = "100px";
+      smallImage.style.height = "100px";
+      smallImage.style.marginInline = "15px";
+      var smallImage2 = document.createElement("img");
+      smallImage2.src = "../images/Nike.jpeg";
+      smallImage2.style.width = "100px";
+      smallImage2.style.height = "100px";
+      smallImage2.style.marginInline = "15px";
+      //to add 4 images
+
+      DivForSmallImages.appendChild(smallImage);
+      DivForSmallImages.appendChild(smallImage2);
+
+      BIGdiv.appendChild(largeImageDiv);
+      BIGdiv.appendChild(DivForSmallImages);
+      document.body.appendChild(BIGdiv);
+    </script>
+  </body>
+</html>
